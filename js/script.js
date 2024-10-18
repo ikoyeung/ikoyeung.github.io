@@ -1,15 +1,4 @@
-const getElements = () => {
-  const nav = document.querySelector(".navbar");
-  const menuBtn = document.querySelector("#menu-btn");
 
-  menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("active");
-  });
-
-  window.addEventListener("scroll", () => {
-    nav.classList.remove("active");
-  });
-};
 
 // const fetchHeader = async () => {
 //   try {
@@ -63,7 +52,18 @@ const fetchFooter = async () => {
     console.log(err);
   }
 };
+const getElements = () => {
+  const nav = document.querySelector(".navbar");
+  const menuBtn = document.querySelector("#menu-btn");
 
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
+  window.addEventListener("scroll", () => {
+    nav.classList.remove("active");
+  });
+};
 // fetchHeader().then(getElements);
 fetchHeader();
 fetchFooter();
