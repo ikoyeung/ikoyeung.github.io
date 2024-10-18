@@ -1,15 +1,15 @@
-// const getElements = () => {
-//   const nav = document.querySelector(".navbar");
-//   const menuBtn = document.querySelector("#menu-btn");
+const getElements = () => {
+  const nav = document.querySelector(".navbar");
+  const menuBtn = document.querySelector("#menu-btn");
 
-//   menuBtn.addEventListener("click", () => {
-//     nav.classList.toggle("active");
-//   });
+  menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
 
-//   window.addEventListener("scroll", () => {
-//     nav.classList.remove("active");
-//   });
-// };
+  window.addEventListener("scroll", () => {
+    nav.classList.remove("active");
+  });
+};
 
 // const fetchHeader = async () => {
 //   try {
