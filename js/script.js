@@ -64,5 +64,6 @@ const fetchFooter = async () => {
   }
 };
 
-fetchHeader().then(getElements);
+// fetchHeader().then(getElements);
+fetchHeader();
 fetchFooter();
