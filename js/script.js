@@ -44,7 +44,7 @@ const footerElement = document.querySelector("footer");
 
 const fetchHeader = async () => {
   try {
-    const res = await fetch("../modules/header.txt");
+    const res = await fetch("/modules/header.txt");
     const template = await res.text();
 
     headerElement.innerHTML = template;
@@ -55,7 +55,7 @@ const fetchHeader = async () => {
 
 const fetchFooter = async () => {
   try {
-    const res = await fetch("../modules/footer.txt");
+    const res = await fetch("/modules/footer.txt");
     const template = await res.text();
 
     footerElement.innerHTML = template;
